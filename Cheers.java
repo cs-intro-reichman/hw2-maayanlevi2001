@@ -5,7 +5,7 @@ public class Cheers {
             String word = args[0];
             int num = Integer.parseInt(args[1]);
 
-           String vowelsAndSpecial = "AEFHILMNORSX";
+           String vowelsAndSpecial = "AEFHILMNORSXaefhilmnorsx";
 
            for (int i = 0; i < word.length() ; i++) { 
                 char ch = word.charAt(i);
