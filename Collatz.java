@@ -46,7 +46,7 @@ public class Collatz {
 			if(needToPrintTable){
 			System.out.println();
 			}
-			System.out.println("Every one of the first 7 hailstone sequences reached 1.");
+			System.out.println("Every one of the first " + n +" hailstone sequences reached 1.");
 		}
 		}
 		
