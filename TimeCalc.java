@@ -20,10 +20,23 @@ public class TimeCalc {
 
         // Calculate the new hours and minutes
         int newHours = (totalMinutes / 60) % 24;
+        
         int newMinutes = totalMinutes % 60;
+        
+        String newHoursPrint = String.valueOf(newHours);
+        String newMinutesPrint = String.valueOf(newMinutes);
 
-        // print
-        System.out.println(newHours + ":" + newMinutes);
+    // print
+
+        if (newHours < 10) {
+             newHoursPrint = "0" + newHours;
+        }
+        if (newMinutes < 10) {
+            newMinutesPrint = "0" + newMinutes;
+        }
+  
+
+        System.out.println(newHoursPrint + ":" + newMinutesPrint) ;
 
     }
 }
