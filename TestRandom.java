@@ -1,12 +1,12 @@
 public class TestRandom {
-100    public static void main(String[] args) {
+  public static void main(String[] args) {
 	// input
         int N = Integer.parseInt(args[0]);
 
         // values names
         int greaterThanHalf = 0;
         int lessThanOrEqualToHalf = 0;
-2
+
         
         for (int i = 0; i < N; i++) {
             double rand = Math.random(); 
@@ -25,9 +25,9 @@ public class TestRandom {
         } else {
             // Calculate and print 
             double ratio = (double) greaterThanHalf / lessThanOrEqualToHalf;
-            System.out.println("> 0.5: " + greaterThanHalf + " times");
+            System.out.println("> 0.5:  " + greaterThanHalf + " times");
             System.out.println("<= 0.5: " + lessThanOrEqualToHalf + " times");
-            System.out.println("Ratio: " + ratio);
+            System.out.println("Ratio:  " + ratio);
         }
     }
 }

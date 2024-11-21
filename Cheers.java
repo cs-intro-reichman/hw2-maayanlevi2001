@@ -2,10 +2,10 @@
 public class Cheers {
         public static void main(String[] args) {
 	    // input
-            String word = args[0];
+            String word = args[0].toUpperCase();
             int num = Integer.parseInt(args[1]);
 
-           String vowelsAndSpecial = "AEFHILMNORSXaefhilmnorsx";
+           String vowelsAndSpecial = "AEFHILMNORSX";
 
            for (int i = 0; i < word.length() ; i++) { 
                 char ch = word.charAt(i);
